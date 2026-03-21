@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('./components/experience.css');
 @import url('./components/base.css');
 @import url('./components/scrollbar.css');
