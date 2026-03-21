@@ -1,4 +1,9 @@
 # Ignore sensitive environment variables
+# (remove .env from here if you want to commit it)
+
+# PHP source - GitHub Pages only needs the rendered HTML
+index.php
+includes/
 
 # Ignore editor/OS files
 .vscode/
