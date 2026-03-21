@@ -1,0 +1,8 @@
+.main.no-items.section {
+    display: none !important;
+}
+
+.widget-content {
+    margin: 0;
+    padding: 0;
+}

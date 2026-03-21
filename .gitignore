@@ -1,0 +1,10 @@
+# Ignore sensitive environment variables
+
+# Ignore editor/OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Ignore XAMPP/local server files
+*.log

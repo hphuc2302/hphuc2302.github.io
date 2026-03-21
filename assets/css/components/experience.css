@@ -1,0 +1,172 @@
+/* BANK CARDS CSS */
+.bank-card {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid white;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.5s ease;
+}
+html.dark .bank-card {
+  background-color: rgba(30, 41, 59, 0.8);
+  border-color: #334155;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+.bank-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* Hover variants for specific banks */
+.bank-mb:hover {
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+  border-color: rgba(147, 197, 253, 0.5);
+}
+html.dark .bank-mb:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.bank-agribank:hover {
+  box-shadow: 0 20px 40px rgba(34, 197, 94, 0.15);
+  border-color: rgba(134, 239, 172, 0.5);
+}
+html.dark .bank-agribank:hover {
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.bank-momo:hover {
+  box-shadow: 0 20px 40px rgba(236, 72, 153, 0.15);
+  border-color: rgba(249, 168, 212, 0.5);
+}
+html.dark .bank-momo:hover {
+  border-color: rgba(236, 72, 153, 0.5);
+}
+
+/* Glow 1 (Top Right) */
+.bank-glow-1 {
+  position: absolute;
+  right: -2.5rem;
+  top: -2.5rem;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 9999px;
+  filter: blur(50px);
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.bank-mb .bank-glow-1 { background-color: rgba(59, 130, 246, 0.1); }
+html.dark .bank-mb .bank-glow-1 { background-color: rgba(59, 130, 246, 0.2); }
+.bank-mb:hover .bank-glow-1 { background-color: rgba(59, 130, 246, 0.3); }
+
+.bank-agribank .bank-glow-1 { background-color: rgba(34, 197, 94, 0.1); }
+html.dark .bank-agribank .bank-glow-1 { background-color: rgba(34, 197, 94, 0.2); }
+.bank-agribank:hover .bank-glow-1 { background-color: rgba(34, 197, 94, 0.3); }
+
+.bank-momo .bank-glow-1 { background-color: rgba(236, 72, 153, 0.1); }
+html.dark .bank-momo .bank-glow-1 { background-color: rgba(236, 72, 153, 0.2); }
+.bank-momo:hover .bank-glow-1 { background-color: rgba(236, 72, 153, 0.3); }
+
+/* Glow 2 (Bottom Left) */
+.bank-glow-2 {
+  position: absolute;
+  left: -2.5rem;
+  bottom: -2.5rem;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 9999px;
+  filter: blur(50px);
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.bank-mb .bank-glow-2 { background-color: rgba(99, 102, 241, 0.05); }
+html.dark .bank-mb .bank-glow-2 { background-color: rgba(99, 102, 241, 0.1); }
+.bank-mb:hover .bank-glow-2 { background-color: rgba(99, 102, 241, 0.2); }
+
+.bank-agribank .bank-glow-2 { background-color: rgba(20, 184, 166, 0.05); }
+html.dark .bank-agribank .bank-glow-2 { background-color: rgba(20, 184, 166, 0.1); }
+.bank-agribank:hover .bank-glow-2 { background-color: rgba(20, 184, 166, 0.2); }
+
+.bank-momo .bank-glow-2 { background-color: rgba(168, 85, 247, 0.05); }
+html.dark .bank-momo .bank-glow-2 { background-color: rgba(168, 85, 247, 0.1); }
+.bank-momo:hover .bank-glow-2 { background-color: rgba(168, 85, 247, 0.2); }
+
+/* Logo Wrapper */
+.bank-logo-wrapper {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f1f5f9;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+html.dark .bank-logo-wrapper {
+  background-color: #0f172a;
+  border-color: rgba(51, 65, 85, 0.5);
+}
+.bank-card:hover .bank-logo-wrapper {
+  transform: scale(1.05);
+}
+
+/* Account Box */
+.bank-account-box {
+  position: relative;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background-color: #f8fafc;
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  transition: border-color 0.3s ease;
+  overflow: hidden;
+}
+html.dark .bank-account-box {
+  background-color: rgba(15, 23, 42, 0.8);
+  border-color: #334155;
+}
+.bank-mb:hover .bank-account-box { border-color: #bfdbfe; }
+html.dark .bank-mb:hover .bank-account-box { border-color: rgba(59, 130, 246, 0.3); }
+.bank-agribank:hover .bank-account-box { border-color: #bbf7d0; }
+html.dark .bank-agribank:hover .bank-account-box { border-color: rgba(34, 197, 94, 0.3); }
+.bank-momo:hover .bank-account-box { border-color: #fbcfe8; }
+html.dark .bank-momo:hover .bank-account-box { border-color: rgba(236, 72, 153, 0.3); }
+
+/* Copy Button */
+.bank-copy-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  color: #94a3b8;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+html.dark .bank-copy-btn {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+.bank-mb .bank-copy-btn:hover { color: #2563eb; border-color: #93c5fd; }
+html.dark .bank-mb .bank-copy-btn:hover { border-color: #3b82f6; }
+.bank-agribank .bank-copy-btn:hover { color: #16a34a; border-color: #86efac; }
+html.dark .bank-agribank .bank-copy-btn:hover { border-color: #22c55e; }
+.bank-momo .bank-copy-btn:hover { color: #db2777; border-color: #f9a8d4; }
+html.dark .bank-momo .bank-copy-btn:hover { border-color: #ec4899; }
+.bank-copy-btn i {
+  font-size: 1.125rem;
+  transition: transform 0.3s ease;
+}
+.bank-copy-btn:hover i {
+  transform: scale(1.1);
+}

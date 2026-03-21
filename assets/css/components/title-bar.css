@@ -1,0 +1,9 @@
+.title-bar::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #0ea5e9, transparent);
+    border-radius: 2px;
+    margin-top: 12px;
+}
